@@ -1,0 +1,281 @@
+﻿Name,Date,Type of Beverage,Price ($),Time,Volume (mL),Mood before consumption,Mood after consumption,Location,Bodily Sensations/Cravings,Sugar (g),Calories,Sodium (mg),Fats (g),Potassium (mg),Cholesterol (mg),Protein (g)
+Person 1,21/10/2023,Tea,0.00,8:00 AM,470,Tired,Alert,Office,None,29,180,0,4,0,0,0
+Person 1,21/10/2023,Water,0.00,11:20 AM,300,Normal,Normal,Office,None,0,0,0,0,0,0,0
+Person 1,21/10/2023,Water,0.00,1:15 PM,300,Normal,Normal,Office,None,0,0,0,0,0,0,0
+Person 1,21/10/2023,Water,0.00,3:09 PM,200,Normal,Normal,Office,None,0,0,0,0,0,0,0
+Person 1,21/10/2023,Soda,3.00,7:03 PM,330,Normal,Normal,Home,Thirsty,30,140,0,0,30,0,0
+Person 1,21/10/2023,Energy Drink,2.00,11:02 PM,590,Normal,Normal,Home,Thirsty,34,140,270,0,75,0,0
+Person 2,21/10/2023,Water,0.00,7:49 AM,150,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 2,21/10/2023,Coffee ,0.50,8:10 AM,200,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,21/10/2023,Coffee ,0.50,12:03 PM,200,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,21/10/2023,Water ,0.00,2:10 PM,100,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 2,21/10/2023,Water,0.00,5:30 PM,200,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 2,21/10/2023,Water,0.00,10:10 PM,200,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 3,21/10/2023,Coffee,1.00,9:15 AM,250,Tired,Normal,Home,Need caffeine,5,10,20,0.5,150,0,0
+Person 3,21/10/2023,Soda,1.75,11:30 AM,330,Normal,Alert,Campus,Thirsty,39,140,50,0,10,0,0
+Person 3,21/10/2023,Water,0.00,2:45 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,21/10/2023,Water,0.00,5:20 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,21/10/2023,Soda,1.75,8:15 PM,330,Normal,Normal,Work,Thirsty,39,140,50,0,10,0,0
+Person 4,21/10/2023,Tea,4.00,6:13 AM,473,Tired,Tired,Airport,Thirsty/Need caffeine ,42,240,115,4.5,0,20,8
+Person 4,21/10/2023,Water,0.00,7:23 AM,225,Tired,Tired,Airport,Thirsty,0,0,0,0,0,0,0
+Person 4,21/10/2023,Water,0.00,7:48 AM,150,Tired,Tired,Airplane,Thirsty ,0,0,0,0,0,0,0
+Person 4,21/10/2023,Water,0.00,9:25 AM,150,Normal,Normal,Airplane,None,0,0,0,0,0,0,0
+Person 4,21/10/2023,Specialty,5.00,12:31 PM,250,Normal,Good,Restaurant,None,144,850,741,25,0,89,13
+Person 4,21/10/2023,Water,0.00,1:07 PM,225,Normal,Normal,Hotel,Thirsty,0,0,0,0,0,0,0
+Person 4,21/10/2023,Alcohol,33.00,5:40 PM,60,Normal,Normal,Bar,None,7,0,0,0,0,0,0
+Person 4,21/10/2023,Alcohol,33.00,6:15 PM,60,Normal,Normal,Bar,None,7,0,0,0,0,0,0
+Person 4,21/10/2023,Alcohol,33.00,6:59 PM,60,Tipsy,Tipsy,Bar,None,7,0,0,0,0,0,0
+Person 4,21/10/2023,Alcohol,33.00,7:32 PM,60,Tipsy,Drunk,Bar,None,7,0,0,0,0,0,0
+Person 4,21/10/2023,Alcohol,33.00,7:57 PM,60,Drunk,Drunk,Bar,None,7,0,0,0,0,0,0
+Person 4,21/10/2023,Alcohol,33.00,8:29 PM,60,Drunk,Drunk,Bar,None,7,0,0,0,0,0,0
+Person 4,21/10/2023,Alcohol,7.00, 8:48 PM,45,Drunk,Drunk,Bar,None,0,0,0,0,0,0,0
+Person 4,21/10/2023,Alcohol,7.00,9:31 PM,45,Drunk,Drunk,Bar,None,0,0,0,0,0,0,0
+Person 4,21/10/2023,Alcohol,7.00,10:09 PM,45,Drunk,Drunk,Bar,None,0,0,0,0,0,0,0
+Person 4,21/10/2023,Alcohol,0.00,11:46 PM,355,Drunk,Drunk,Casino,None,0,102,0,0,0,0,0
+Person 5,21/10/2023,Water,0.00,9:00 AM,250,Tired,Alert,Home,Thirsty,0,0,0,0,0,0,0
+Person 5,21/10/2023,Water,0.00,11:15 AM,40,Tired,Alert,Home,Thirsty,0,0,0,0,0,0,0
+Person 5,21/10/2023,Coffee,6.99,3:23 PM,375,Tired,Alert,Campus,Need caffeine,30,190,115,4,550,15,4
+Person 5,21/10/2023,Water,0.00,5:23 PM,35,Tired,Alert ,Home,Thirsty ,0,0,0,0,0,0,0
+Person 5,21/10/2023,Water,0.00,8:23 PM,100,Tired,Alert ,Home,Thirsty ,0,0,0,0,0,0,0
+Person 6,21/10/2023,Soda,1.00,7:49 AM,200,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,21/10/2023,Water,0.00,8:50 AM,200,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,21/10/2023,Water,0.00,9:43 AM,500,Normal,Good,School,Thirsty,0,0,0,0,0,0,0
+Person 6,21/10/2023,Coffee,2.00,10:49 AM,70,Normal,Refreshed,Home,Thirsty/Need caffeine ,5,32,30,2,200,0,0
+Person 6,21/10/2023,Specialty,2.50,2:21 AM,70,Normal,Good,Campus,Need sugar,15,100,30,5,100,0,0
+Person 6,21/10/2023,Specialty,5.00,5:20 PM,500,Good,Good,Home,Need sugar,40,250,30,0,200,0,0
+Person 1,22/10/2023,Tea,0.00,2:00 PM,470,Normal,Normal,Home,None,29,180,0,4,0,0,0
+Person 1,22/10/2023,Water,0.00,3:03 PM,300,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,22/10/2023,Water,0.00,7:30 PM,300,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,22/10/2023,Soda,3.00,9:30 PM,330,Normal,Normal,Home,None,30,140,0,0,30,0,0
+Person 2,22/10/2023,Water,0.00,11:49 AM,300,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 2,22/10/2023,Coffee ,0.50,12:03 PM,200,Normal,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,22/10/2023,Water ,0.00,2:15 PM,300,Normal,Normal,Home,Thirsty,0,48,0,0,0,0,0
+Person 2,22/10/2023,Water ,0.00,3:00 PM,100,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 2,22/10/2023,Water,0.00,5:30 PM,200,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 2,22/10/2023,Water,0.00,10:10 PM,300,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 3,22/10/2023,Coffee,1.00,8:00 AM,250,Tired,Normal,Home,Need caffeine,5,10,20,0.5,150,0,0
+Person 3,22/10/2023,Water,0.00,10:20 AM,300,Normal,Normal,Campus,None,0,0,0,0,0,0,0
+Person 3,22/10/2023,Gatorade,4.50,2:40 PM,500,Normal,Alert,Work,None,20,80,60,0.5,300,0,0
+Person 3,22/10/2023,Water,0.00,5:30 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,22/10/2023,Soda,1.75,8:25 PM,330,Normal,Normal,Work,Thirsty,39,140,50,0,10,0,0
+Person 4,22/10/2023,Water,0.00,1:12 AM,250,Drunk,Drunk,Hotel,Thirsty/Need caffeine ,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,1:17 AM,250,Drunk,Drunk,Hotel,Thirsty,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,9:07 AM,250,Hungover,Hungover,Hotel,Thirsty,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,9:27 AM,250,Hungover,Hungover,Hotel,Thirsty,0,0,0,0,0,0,0
+Person 4,22/10/2023,Coffee,0.00,9:27 AM,250,Hungover,Hungover,Restaurant,Need caffeine,0,0,2,0,49,0,0
+Person 4,22/10/2023,Water,0.00,10:30 AM,355,Hungover,Hungover,Sports stadium,Thirsty,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,12:01 AM,355,Hungover,Hungover,Sports stadium,Thirsty,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,12:27 AM,355,Hungover,Hungover,Sports stadium,Thirsty,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,1:00 PM,355,Hungover,Normal,Sports stadium,Thirsty,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,2:03 PM,355,Normal,Normal,Sports stadium,Thirsty,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,7:31 PM,225,Normal,Normal,Airport,Thirsty,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,8:21 PM,590,Normal,Normal,Airport,Thirsty,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,9:21 PM,255,Normal,Tired,Airplane,None,0,0,0,0,0,0,0
+Person 4,22/10/2023,Water,0.00,10:12 PM,590,Tired,Tired,Airplane,None,0,0,0,0,0,0,0
+Person 5,22/10/2023,Water,0.00,9:31 AM,100,Tired,Alert ,Home,Thirsty,0,0,0,0,0,0,0
+Person 5,22/10/2023,Milk,5.99,9:45 AM,250,Normal,Refreshed,Home,Thirsty ,12,160,125,8,0,30,8
+Person 5,22/10/2023,Energy Drink,2.99,11:18 AM,177,Tired,Alert,Home,None,0,5,23,0,0,20,0
+Person 5,22/10/2023,Water,0.00,2:38 PM,100,Tired,Refreshed,Campus,Thirsty,0,0,0,0,0,0,0
+Person 5,22/10/2023,Coffee,6.99,9:11 PM,375,Tired,Refreshed,Campus,Need caffeine,30,190,115,4g,550,15,4
+Person 6,22/10/2023,Soda,1.00,5:00 AM,400,Normal,Good,Home,Need sugar,0,0,0,0,0,0,0
+Person 6,22/10/2023,Water,0.00,9:40 AM,200,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,22/10/2023,Water,0.00,11:30 AM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,22/10/2023,Coffee,2.00,1:50 PM,70,Normal,Refreshed,Home,Thirsty/Need caffeine ,5,32,30,2,200,0,0
+Person 6,22/10/2023,Protein,2.50,9:03 PM,250,Normal,Good,Gym,Need protein,5,120,30,5,100,0,35
+Person 6,22/10/2023,Specialty,5.00,10:05 PM,500,Good,Good,Home,Need sugar,40,250,30,0,200,0,0
+Person 6,22/10/2023,Water,0.00,11:49 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 1,23/10/2023,Tea,0.00,8:00 AM,470,Tired,Alert,Office,None,29,180,0,4,0,0,0
+Person 1,23/10/2023,Water,0.00,10:38 AM,300,Normal,Normal,Office,None,0,0,0,0,0,0,0
+Person 1,23/10/2023,Tea,0.00,1:05 PM,470,Normal,Normal,Office,None,0,0,0,0,0,0,0
+Person 1,23/10/2023,Water,0.00,3:20 PM,470,Normal,Normal,Office,None,0,0,0,0,0,0,0
+Person 1,23/10/2023,Soda,3.00,7:50 PM,330,Thirsty,Refreshed,Home,None,30,140,0,0,30,0,0
+Person 1,23/10/2023,Energy Drink,2.00,10:30 PM,590,Thirsty,Refreshed,Home,None,34,140,270,0,75,0,0
+Person 2,23/10/2023,Coffee ,0.50,7:49 AM,200,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,23/10/2023,Coffee ,4.80,11:50 AM,340,Tired,Alert,Campus,Need caffeine,32,190,95,4,0,15,0
+Person 2,23/10/2023,Water,0.00,3:15 PM,300,Tired,Tired,Campus,Thirsty,0,0,0,0,0,0,0
+Person 2,23/10/2023,Water,0.00,10:00 PM,300,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 3,23/10/2023,Coffee,1.00,7:45 AM,250,Tired,Normal,Home,Need caffeine,5,10,20,0.5,150,0,0
+Person 3,23/10/2023,Soda,1.75,9:55 AM,330,Normal,Normal,Campus,Thirsty,39,140,50,0,10,0,0
+Person 3,23/10/2023,Water,0.00,4:10 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,23/10/2023,Water,0.00,7:30 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,23/10/2023,Soda,1.75,9:45 PM,330,Normal,Alert,Work,Thirsty,39,140,50,0,10,0,0
+Person 4,23/10/2023,Water,0.00,11:37 AM,590,Tired,Tired,Home,None,0,0,0,0,0,0,0
+Person 4,23/10/2023,Water,0.00,1:39 PM,355,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,23/10/2023,Coffee,0.00,4:00 PM,250,Normal,Alert,Home,None,0,0,2,0,49,0,0
+Person 4,23/10/2023,Water,0.00,7:00 PM,355,Tired,Tired,Campus,None,0,0,0,0,0,0,0
+Person 4,23/10/2023,Water,0.00,10:42 PM,355,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 5,23/10/2023,Water,0.00,8:11 AM,400,Tired,Alert,Home,None,0,0,0,0,0,0,0
+Person 5,23/10/2023,Water,0.00,10:35 AM,414,Tired,Refreshed,Campus,None,0,0,0,0,0,0,0
+Person 5,23/10/2023,Coffee,3.26,3:21 PM,395,Tired,Alert,Campus,Need caffeine,0,70,40,0.5,0,0,4
+Person 5,23/10/2023,Water,0.00,6:00 PM,200,Tired,Alert,Campus,None,0,0,0,0,0,0,0
+Person 5,23/10/2023,Water,0.00,8:44 PM,414,Tired,Alert ,Campus,None,0,0,0,0,0,0,0
+Person 6,23/10/2023,Specialty,1.00,8:30 AM,500,Good,Good,Home,Thirsty,20,70,20,2,10,20,0
+Person 6,23/10/2023,Water,0.00,9:30 AM,200,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,23/10/2023,Water,0.00,10:30 AM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,23/10/2023,Coffee,2.00,11:40 AM,70,Normal,Refreshed,Home,Thirsty/Need caffeine ,5,32,30,2,200,0,0
+Person 6,23/10/2023,Protein,2.50,12:40 PM,250,Normal,Good,Home,Need protein,5,120,30,5,100,0,35
+Person 6,23/10/2023,Specialty,5.00,2:45 PM,500,Good,Good,Home,Need sugar,40,250,30,0,200,0,0
+Person 6,23/10/2023,Water,0.00,8:43 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 1,24/10/2023,Tea,0.00,8:00 AM,470,Tired,Alert,Normal,None,29,180,0,4,0,0,0
+Person 1,24/10/2023,Water,0.00,2:01 PM,300,Normal,Normal,Normal,None,0,0,0,0,0,0,0
+Person 1,24/10/2023,Water,0.00,5:30 PM,470,Normal,Normal,Normal,None,0,0,0,0,0,0,0
+Person 1,24/10/2023,Soda,3.00,7:13 PM,330,Thirsty,Refreshed,Normal,None,30,140,0,0,30,0,0
+Person 1,24/10/2023,Energy Drink,2.00,10:00 PM,590,Normal,Normal,Normal,None,34,140,270,0,75,0,0
+Person 2,24/10/2023,Coffee ,0.50,7:50 AM,300,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,24/10/2023,Coffee ,0.50,12:00 PM,250,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,24/10/2023,Coffee ,0.50,2:20 PM,200,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,24/10/2023,Soda,2.00,4:15 PM,354,Normal,Normal,Home,Need sugar,43,160,65,0,0,0,0
+Person 2,24/10/2023,Water,0.00,10:00 PM,200,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 3,24/10/2023,Coffee,1.00,8:15 AM,250,Tired,Normal,Home,Need caffeine,5,10,20,0.5,150,0,0
+Person 3,24/10/2023,Water,0.00,10:40 AM,300,Normal,Normal,Campus,None,0,0,0,0,0,0,0
+Person 3,24/10/2023,Gatorade,4.50,3:55 PM,500,Normal,Alert,Work,None,20,80,60,0.5,300,0,0
+Person 3,24/10/2023,Water,0.00,6:25 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,24/10/2023,Soda,1.75,8:45 PM,330,Normal,Normal,Work,Thirsty,39,140,50,0,10,0,0
+Person 4,24/10/2023,Water,0.00,10:30 AM,590,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,24/10/2023,Water,0.00,1:02 PM,590,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,24/10/2023,Water,0.00,4:03 PM,355,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,24/10/2023,Soda,0.00,6:31 PM,355,Normal,Normal,Home,None,32,130,50,0,0,0,0
+Person 4,24/10/2023,Water,0.00,9:27 PM,355,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,24/10/2023,Water,0.00,11:38 PM,355,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 5,24/10/2023,Water,0.00,7:21 AM,250,Tired,Alert,Home,Thirsty,0,0,0,0,0,0,0
+Person 5,24/10/2023,Coffee,6.99,12:30 PM,375,Tired,Refreshed,Campus,Need caffeine,30,190,115,4,550,15,4
+Person 5,24/10/2023,Milk,5.99,2:33 PM,250,Tired,Refreshed,Home,None,12,160,125,8,0,30,8
+Person 5,24/10/2023,Energy Drink,2.99,5:45 PM,177,Tired,Alert,Home,Thirsty,0,5,23,0,0,20,0
+Person 5,24/10/2023,Water,0.00,7:54 PM,414,Tired,Alert,Home,Thirsty ,0,0,0,0,0,0,0
+Person 6,24/10/2023,Specialty,1.00,10:30 AM,500,Good,Good,Home,Thirsty,20,70,20,2,10,20,0
+Person 6,24/10/2023,Water,0.00,1:30 PM,400,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,24/10/2023,Water,0.00,3:30 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,24/10/2023,Protein,2.50,5:30 PM,350,Normal,Good,Home,Thirsty,5,150,30,5,100,0,35
+Person 6,24/10/2023,Water,0.00,6:30 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,24/10/2023,Water,0.00,8:30 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,24/10/2023,Specialty,3.00,9:35 PM,100,Normal,Good,Home,Thirsty,20,100,0,0,0,0,0
+Person 1,25/10/2023,Tea,0.00,9:05 AM,470,Tired,Alert,Home,None,29,180,0,4,0,0,0
+Person 1,25/10/2023,Water,0.00,1:23 PM,300,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,25/10/2023,Tea,0.00,3:50 PM,470,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,25/10/2023,Water,0.00,5:19 PM,470,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,25/10/2023,Soda,3.00,8:00 PM,330,Thirsty,Refreshed,Home,None,30,140,0,0,30,0,0
+Person 1,25/10/2023,Energy Drink,2.00,11:34 PM,590,Normal,Normal,Home,None,34,140,270,0,75,0,0
+Person 2,25/10/2023,Coffee ,0.50,7:50 AM,200,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,25/10/2023,Coffee ,4.80,11:50 AM,340,Tired,Alert,Campus,Need caffeine,32,190,95,4,0,15,0
+Person 2,25/10/2023,Energy Drink,2.75,3:00 PM,354,Normal,Normal,Campus,Need something tasty,20,75,240,0,75,0,0
+Person 2,25/10/2023,Energy Drink,2.75,6:00 PM,355,Tired,Normal,Home,Thirsty,20,75,240,0,75,0,0
+Person 2,25/10/2023,Water,0.00,10:15 PM,200,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 3,25/10/2023,Coffee,1.00,7:30 AM,250,Tired,Normal,Home,Need caffeine,5,10,20,0.5,150,0,0
+Person 3,25/10/2023,Soda,1.75,9:45 AM,330,Normal,Normal,Campus,Thirsty,39,140,50,0,10,0,0
+Person 3,25/10/2023,Water,0.00,4:05 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,25/10/2023,Water,0.00,7:20 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,25/10/2023,Soda,1.75,9:00 PM,330,Normal,Alert,Work,Thirsty,39,140,50,0,10,0,0
+Person 4,25/10/2023,Water,0.00,10:17 AM,355,Tired,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,25/10/2023,Water,0.00,11:47 AM,355,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,25/10/2023,Water,0.00,2:49 PM,355,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,25/10/2023,Water,0.00,6:23 PM,355,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 4,25/10/2023,Water,0.00,9:33 PM,590,Normal,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,25/10/2023,Water,0.00,11:17 PM,200,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 5,25/10/2023,Juice,8.99,8:21 AM,250,Tired,Refreshed,Home,Need sugar,24,100,15,0,225,0,0
+Person 5,25/10/2023,Milk,5.99,8:59 AM,250,Normal,Alert,Home,None,12,160,125,8,0,30,8
+Person 5,25/10/2023,Water,0.00,12:44 PM,414,Normal,Alert,Home,None,0,0,0,0,0,0,0
+Person 5,25/10/2023,Coffee,6.99,4:12 PM,375,Normal,Alert,Home,Need caffeine,30,190,115,4,550,15,4
+Person 5,25/10/2023,Energy Drink,2.99,6:20 PM,212,Tired,Refreshed,Gym,None,0,5,23,0,0,20,0
+Person 6,25/10/2023,Specialty,1.00,7:30 AM,500,Good,Good,Home,Thirsty,20,70,20,2,10,20,0
+Person 6,25/10/2023,Water,0.00,10:30 AM,400,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,25/10/2023,Water,0.00,12:30 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,25/10/2023,Protein,2.50,1:30 PM,350,Normal,Good,Home,Thirsty,5,150,30,5,100,0,35
+Person 6,25/10/2023,Water,0.00,3:30 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,25/10/2023,Water,0.00,5:30 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,25/10/2023,Specialty,3.00,9:30 PM,100,Normal,Good,Home,Thirsty,20,100,0,0,0,0,0
+Person 1,26/10/2023,Tea,0.00,10:06 AM,470,Tired,Alert,Home,None,29,180,0,4,0,0,0
+Person 1,26/10/2023,Water,0.00,12:50 PM,470,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,26/10/2023,Water,0.00,3:23 PM,470,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,26/10/2023,Soda,3.00,6:00 PM,330,Normal,Refreshed,Home,None,30,140,0,0,30,0,0
+Person 1,26/10/2023,Energy Drink,2.00,10:34 PM,590,Normal,Normal,Home,None,34,140,270,0,75,0,0
+Person 2,26/10/2023,Coffee ,0.50,8:10 AM,200,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,26/10/2023,Coffee ,4.80,10:50 AM,340,Tired,Alert,Campus,Need caffeine,32,190,95,4,N/A,15,0
+Person 2,26/10/2023,Water,0.00,12:30 PM,100,Tired,Tired,Campus,None,0,0,0,0,0,0,0
+Person 2,26/10/2023,Soda,2.75,3:25 PM,500,Tired,Tired,Campus,Need sugar,43,160,50,0,0,0,0
+Person 2,26/10/2023,Water,0.00,10:10 PM,350,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 3,26/10/2023,Coffee,1.00,8:30 AM,250,Tired,Normal,Home,Need caffeine,5,10,20,0.5,150,0,0
+Person 3,26/10/2023,Water,0.00,10:45 AM,300,Normal,Normal,Campus,None,0,0,0,0,0,0,0
+Person 3,26/10/2023,Water,0.00,5:15 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,26/10/2023,Water,0.00,8:25 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,26/10/2023,Soda,1.75,10:30 PM,330,Normal,Tired,Home,Thirsty,39,140,50,0,10,0,0
+Person 4,26/10/2023,Water,0.00,8:01 AM,590,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,26/10/2023,Water,0.00,2:15 PM,590,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,26/10/2023,Water,0.00,6:20 PM,355,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 4,26/10/2023,Water,0.00,8:55 PM,590,Normal,Tired,Home,None,0,0,0,0,0,0,0
+Person 4,26/10/2023,Water,0.00,11:29 PM,590,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 5,26/10/2023,Juice,8.99,9:00 AM,250,Normal,Alert ,Home,Need sugar,12,160,125,8,0,30,0
+Person 5,26/10/2023,Milk,5.99,9:12 AM,250,Normal,Refreshed,Home,Thirsty,12,160,125,8,0,30,8
+Person 5,26/10/2023,Coffee,3.26,12:41 PM,395,Tired,Alert,Home,Need caffeine,0,70,40,0.5,0,0,4
+Person 5,26/10/2023,Water,0.00,1:20 PM,414,Normal,Refreshed,Home,None,0,0,0,0,0,0,0
+Person 5,26/10/2023,Water,0.00,3:33 PM,414,Normal,Alert ,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,26/10/2023,Soda,1.00,7:00 AM,400,Normal,Good,Home,Need sugar,0,0,0,0,0,0,0
+Person 6,26/10/2023,Soda,0.00,9:40 AM,200,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,26/10/2023,Water,0.00,11:30 AM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,26/10/2023,Coffee,2.00,1:50 PM,70,Normal,Refreshed,Home,Thirsty/Need caffeine ,5,32,30,2,200,0,0
+Person 6,26/10/2023,Protein,2.50,9:03 PM,250,Normal,Good,Gym,Need protein,5,120,30,5,100,0,35
+Person 6,26/10/2023,Specialty,3.00,10:05 PM,500,Good,Good,Home,Need sugar,140,250,30,0,200,0,0
+Person 1,27/10/2023,Tea,0.00,7:45 AM,470,Tired,Alert,Home,None,29,180,0,4,0,0,0
+Person 1,27/10/2023,Water,0.00,10:10 AM,300,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,27/10/2023,Water,0.00,1:43 PM,300,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,27/10/2023,Water,0.00,3:31 PM,200,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,27/10/2023,Tea,0.00,4:00 PM,470,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,27/10/2023,Soda,3.00,7:03 PM,330,Thirsty,Refreshed,Home,None,30,140,0,0,30,0,0
+Person 1,27/10/2023,Alcohol,1.50,11:11 PM,60,Normal,Refreshed,Home,None,0,124,0,0,0,0,0
+Person 2,27/10/2023,Coffee ,0.50,8:30 AM,200,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,27/10/2023,Coffee ,0.50,11:30 AM,200,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 2,27/10/2023,Water,0.00,2:15 PM,250,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 2,27/10/2023,Water,0.00,7:30 PM,200,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 3,27/10/2023,Coffee,1.00,8:45 AM,250,Tired,Normal,Home,Need caffeine,5,10,20,0.5,150,0,0
+Person 3,27/10/2023,Water,0.00,11:00 AM,300,Normal,Normal,Campus,None,0,0,0,0,0,0,0
+Person 3,27/10/2023,Water,0.00,4:30 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,27/10/2023,Soda,1.75,7:50 PM,330,Normal,Alert,Work,Thirsty,39,140,50,0,10,0,0
+Person 4,27/10/2023,Water,0.00,10:37 AM,590,Tired,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,27/10/2023,Specialty,0.00,11:49 AM,560,Normal,Alert,Home,Need caffeine,0,0,0,0,0,0,0
+Person 4,27/10/2023,Water,0.00,1:49 PM,590,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,27/10/2023,Water,0.00,4:06 PM,590,Tired,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,27/10/2023,Water,0.00,6:30 PM,355,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 4,27/10/2023,Specialty,0.00,9:00 PM,560,Normal,Tired,Home,None,54,691,420,20,1197,69,72
+Person 4,27/10/2023,Water,0.00,11:36 PM,590,Tired,Tired,Home,Thirsty/Need caffeine ,0,0,0,0,0,0,0
+Person 5,27/10/2023,Milk,5.99,12:00 PM,250,Normal,Alert,Home,None,12,160,125,8,0,30,8
+Person 5,27/10/2023,Water,0.00,8:00 AM,414,Tired,Refreshed,Home,Thirsty,0,0,0,0,0,0,0
+Person 5,27/10/2023,Juice,8.99,8:23 AM,250,Normal,Alert,Home,Thirsty,12,160,125,8,0,30,0
+Person 5,27/10/2023,Energy Drink,2.99,3:34 PM,212,Normal,Alert,Gym,None,0,5,23,0,0,20,0
+Person 5,27/10/2023,Water,0.00,8:44 PM,414,Tired,Alert,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,27/10/2023,Specialty,1.00,10:30 AM,500,Good,Good,Home,Thirsty,70,70,20,2,10,20,0
+Person 6,27/10/2023,Water,0.00,1:30 PM,400,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,27/10/2023,Water,0.00,3:30 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,27/10/2023,Protein,2.50,5:30 PM,350,Normal,Good,Home,Thirsty,5,150,30,5,100,0,35
+Person 6,27/10/2023,Water,0.00,6:30 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,27/10/2023,Water,0.00,8:30 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,27/10/2023,Specialty,3.00,9:35 PM,150,Normal,Good,Home,Thirsty,40,200,0,0,0,0,0
+Person 1,28/10/2023,Tea,0.00,10:02 AM,470,Tired,Alert,Home,None,29,180,0,4,0,0,0
+Person 1,28/10/2023,Water,0.00,1:16 PM,400,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,28/10/2023,Water,0.00,3:34 PM,300,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,28/10/2023,Water,0.00,5:02 PM,200,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 1,28/10/2023,Soda,3.00,7:32 PM,330,Normal,Normal,Home,None,30,140,0,0,30,0,0
+Person 1,28/10/2023,Alcohol,1.50,11:31 PM,60,Normal,Refreshed,Home,None,0,124,0,0,0,0,0
+Person 2,28/10/2023,Soda,2.00,12:30 AM,354,Tired,Tired,Home,Thirsty,39,140,45,0,,,0
+Person 2,28/10/2023,Coffee ,0.50,10:10 AM,300,Tired,Alert,Home,Need caffeine,12.5,48,0,0,125,0,0
+Person 3,28/10/2023,Coffee,1.00,8:30 AM,250,Tired,Normal,Home,Need caffeine,5,10,20,0.5,150,0,0
+Person 3,28/10/2023,Water,0.00,10:45 AM,300,Normal,Normal,Campus,None,0,0,0,0,0,0,0
+Person 3,28/10/2023,Gatorade,4.50,2:45 PM,500,Normal,Alert,Work,None,20,80,60,0.5,300,0,0
+Person 3,28/10/2023,Water,0.00,6:00 PM,300,Normal,Alert,Work,None,0,0,0,0,0,0,0
+Person 3,28/10/2023,Soda,1.75,8:30 PM,330,Normal,Tired,Home,Thirsty,39,140,50,0,10,0,0
+Person 3,28/10/2023,Water,0.00,10:20 AM,250,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,28/10/2023,Specialty,0.00,11:48 PM,560,Tired,Alert,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,28/10/2023,Water,0.00,3:50 PM,590,Tired,Tired,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,28/10/2023,Water,0.00,6:25 PM,335,Normal,Normal,Home,None,0,0,0,0,0,0,0
+Person 4,28/10/2023,Water,0.00,8:05 PM,590,Normal,Normal,Home,Thirsty,0,0,0,0,0,0,0
+Person 4,28/10/2023,Specialty,0.00,9:24 PM,560,Tired,Tired,Home,None,54,691,420,20,1197,69,72
+Person 5,28/10/2023,Coffee,6.99,12:30 PM,375,Tired,Alert,Home,Need caffeine,30,190,115,4,550,15,4
+Person 5,28/10/2023,Milk,5.99,1:12 PM,250,Tired,Refreshed,Home,None,12,160,125,8,0,30,8
+Person 5,28/10/2023,Juice,8.99,4:12 PM,250,Normal,Alert,Home,Need sugar,12,160,125,8,0,30,0
+Person 5,28/10/2023,Water,0.00,6:30 PM,414,Normal,Alert ,Home,None,0,0,0,0,0,0,0
+Person 5,28/10/2023,Water,0.00,9:00 PM,414,Tired,Alert ,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,28/10/2023,Specialty,3.00,7:30 AM,300,Normal,Good,Home,Thirsty,20,120,0,0,0,0,0
+Person 6,28/10/2023,Water,0.00,8:55 AM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0
+Person 6,28/10/2023,Water,0.00,9:55 AM,500,Normal,Good,School,Thirsty,0,0,0,0,0,0,0
+Person 6,28/10/2023,Coffee,2.00,10:30 AM,70,Normal,Refreshed,Home,Thirsty/Need caffeine ,5,32,30,2,200,0,0
+Person 6,28/10/2023,Specialty,2.50,3:21 PM,470,Normal,Good,Outside,Need sugar,50,450,30,5,100,0,0
+Person 6,28/10/2023,Soda,2.00,5:20 PM,500,Good,Good,Home,Need sugar,0,0,0,0,0,0,0
+Person 6,28/10/2023,Water,0.00,8:55 PM,500,Normal,Good,Home,Thirsty,0,0,0,0,0,0,0

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 6px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .dropdown-container {
+            margin-bottom: 2px; 
+            justify-content: space-between;
+            align-items: center; 
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        select {
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Daily Beverage Consumption Analysis</h1>
+        <div class="dropdown-container">
+            <label for="moodDropdown">Mood Before Consumption:</label>
+            <select id="moodDropdown"></select>
+        </div>
+        <div class="dropdown-container">
+            <label for="cravingsDropdown">Bodily Sensations/Cravings:</label>
+            <select id="cravingsDropdown"></select>
+        </div> 
+    </div>
+    <div id="chart"></div>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+
+        d3.csv("data.csv").then(function (data) {
+
+            data.forEach(function (d) {
+                // Convert time to a Date object
+                d.hour = d.Time;
+                const timeParts = d.Time.match(/(\d+):(\d+) (\w+)/);
+                const hours = timeParts[1] % 12 + (timeParts[3] === 'PM' ? 12 : 0);
+                const minutes = timeParts[2];
+                d.Time = new Date(2000, 0, 1, hours, minutes);
+
+                d["Price ($)"] = +d["Price ($)"];
+            });
+
+            var selectedMood = 'All', selectedCraving = 'All';
+            // Set dimensions and margins
+            const margin = { top: 50, right: 200, bottom: 70, left: 150 },
+                width = 1200 - margin.left - margin.right,
+                height = 600 - margin.top - margin.bottom;
+
+            // Unique values for mood and cravings
+            const uniqueMoods = ["All", ...new Set(data.map(d => d["Mood before consumption"]))];
+            const uniqueCravings = ["All", ...new Set(data.map(d => d["Bodily Sensations/Cravings"]))];
+
+            // Populate mood dropdown
+            d3.select("#moodDropdown")
+                .selectAll("option")
+                .data(uniqueMoods)
+                .enter()
+                .append("option")
+                .text(d => d)
+                .attr("value", d => d);
+
+            // Populate cravings dropdown
+            d3.select("#cravingsDropdown")
+                .selectAll("option")
+                .data(uniqueCravings)
+                .enter()
+                .append("option")
+                .text(d => d)
+                .attr("value", d => d);
+
+            // Event listeners for dropdown changes
+            d3.select("#moodDropdown").on("change", function (event) {
+                selectedMood = d3.select(this).property("value");
+                drawPlot(data, selectedMood, selectedCraving)
+
+            });
+
+            d3.select("#cravingsDropdown").on("change", function (event) {
+                selectedCraving = d3.select(this).property("value");
+                drawPlot(data, selectedMood, selectedCraving)
+
+            });
+
+            drawPlot(data, selectedMood, selectedCraving)
+
+            function drawPlot(data, selectedMood, selectedCraving) {
+
+                if (selectedCraving !== 'All') data = data.filter(d => d["Bodily Sensations/Cravings"] === selectedCraving)
+                if (selectedMood !== 'All') data = data.filter(d => d["Mood before consumption"] === selectedMood)
+                d3.select('svg').remove();
+                // Append the svg object to the body
+                const svg = d3.select("#chart")
+                    .append("svg")
+                    .attr("width", width + margin.left + margin.right)
+                    .attr("height", height + margin.top + margin.bottom)
+                    .append("g")
+                    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+                // Define the clip path
+                svg.append("defs").append("clipPath")
+                    .attr("id", "clip")
+                    .append("rect")
+                    .attr("width", width)
+                    .attr("height", height + 50)
+                    .attr("transform", `translate(${0},${-25})`);
+
+                // X axis
+                const x = d3.scaleTime()
+                    .domain(d3.extent(data, d => d.Time))
+                    .range([0, width]).nice();
+                var xAxis = svg.append("g")
+                    .attr("transform", `translate(0, ${height})`)
+                    .call(d3.axisBottom(x));
+
+                // X axis label
+                svg.append("text")
+                    .attr("class", "axis-label")
+                    .attr("text-anchor", "end")
+                    .attr("x", width / 2)
+                    .attr("y", height + margin.bottom - 20)
+                    .text("Time of Day");
+
+                // Y axis
+                const y = d3.scalePoint()
+                    .domain(data.map(d => d.Location))
+                    .range([height, 0]);
+                svg.append("g")
+                    .call(d3.axisLeft(y));
+
+                // Y axis label
+                svg.append("text")
+                    .attr("class", "axis-label")
+                    .attr("text-anchor", "end")
+                    .attr("transform", "rotate(-90)")
+                    .attr("y", -margin.left + 50)
+                    .attr("x", -height / 2)
+                    .text("Location");
+
+                // Add a scale for bubble size
+                const z = d3.scaleSqrt()
+                    .domain([0, d3.max(data, d => d["Price ($)"])])
+                    .range([5, 20]);
+
+                // Add a scale for bubble color
+                const myColor = d3.scaleOrdinal()
+                    .domain([...new Set(data.map(d => d["Type of Beverage"]))])
+                    .range(d3.schemeCategory10);
+
+                // Tooltip
+                const tooltip = d3.select("body").append("div")
+                    .attr("class", "tooltip");
+
+                const mouseover = function (event, d) {
+                    tooltip
+                        .style("opacity", 1);
+                };
+                const mousemove = function (event, d) {
+                    tooltip
+                        .html(`Beverage: ${d["Type of Beverage"]}<br>Price: $${d["Price ($)"]}<br>Time: ${d.hour}`)
+                        .style("left", `${event.pageX + 10}px`)
+                        .style("top", `${event.pageY + 10}px`);
+                };
+                const mouseleave = function (event, d) {
+                    tooltip
+                        .style("opacity", 0);
+                };
+
+                // Define the brush (only for the X-axis)
+                const brush = d3.brushX()
+                    .extent([[0, 0], [width, height]])
+                    .on("end", updateChart);
+
+                // Add brush to the svg
+                svg.append("g")
+                    .attr("class", "brush")
+                    .call(brush);
+
+                // Add dots
+                svg.append('g').attr("clip-path", "url(#clip)")
+                    .selectAll("dot")
+                    .data(data)
+                    .enter()
+                    .append("circle").attr('class', 'dot')
+                    .attr("cx", d => x(d.Time))
+                    .attr("cy", d => y(d.Location))
+                    .attr("r", d => z(d["Price ($)"]))
+                    .style("fill", d => myColor(d["Type of Beverage"]))
+                    .style("opacity", "0.7")
+                    .attr("stroke", "white")
+                    .on("mouseover", mouseover)
+                    .on("mousemove", mousemove)
+                    .on("mouseleave", mouseleave);
+
+                const priceExtent = d3.extent(data, d => d["Price ($)"]);
+                const sizeLegendValues = [
+                    priceExtent[0],
+                    (priceExtent[0] + priceExtent[1]) / 2,
+                    priceExtent[1]
+                ];
+                const sizeLegend = svg.append("g")
+                    .attr("transform", `translate(${width + 80}, -100)`);
+
+                sizeLegend.selectAll("circle")
+                    .data(sizeLegendValues)
+                    .enter().append("circle")
+                    .attr("cy", (d, i) => 100 + i * 40)
+                    .attr("r", d => z(d))
+                    .style("fill", "none")
+                    .style("stroke", "black");
+
+                sizeLegend.selectAll("text")
+                    .data(sizeLegendValues)
+                    .enter().append("text")
+                    .attr("y", (d, i) => 105 + i * 40)
+                    .attr("x", d => z(d) + 5)
+                    .style("font-size", "12px")
+                    .text(d => `$${d}`);
+
+                sizeLegend.append("text")
+                    .attr("y", 80)
+                    .attr("x", -30)
+                    .style("font-size", "14px")
+                    .style("text-anchor", "start")
+                    .text("Price ($)");
+
+                // Color legend (for Type of Beverage)
+                const colorLegend = svg.append("g")
+                    .attr("transform", `translate(${width + 80}, 150)`);
+
+                myColor.domain().forEach((type, index) => {
+                    colorLegend.append("circle")
+                        .attr("cy", index * 25)
+                        .attr("r", 10)
+                        .style("fill", myColor(type));
+
+                    colorLegend.append("text")
+                        .attr("y", index * 25 + 5)
+                        .attr("x", 20)
+                        .style("font-size", "12px")
+                        .text(type);
+                });
+
+                colorLegend.append("text")
+                    .attr("y", -20)
+                    .attr("x", -30)
+                    .style("font-size", "14px")
+                    .style("text-anchor", "start")
+                    .text("Type of Beverage");
+
+
+                function updateChart(event) {
+                    const extent = event.selection;
+                    if (!extent) {
+                        if (!idleTimeout) return idleTimeout = setTimeout(idled, 350);
+                        x.domain(d3.extent(data, d => d.Time)).nice();
+                    } else {
+                        x.domain([x.invert(extent[0]), x.invert(extent[1])]);
+                        svg.select(".brush").call(brush.move, null);
+                    }
+
+                    // Update axis and circle position
+                    xAxis.transition().duration(1000).call(d3.axisBottom(x));
+                    svg.selectAll(".dot")
+                        .transition().duration(1000)
+                        .attr("cx", d => x(d.Time));
+                }
+
+                // Double click to reset
+                svg.on("dblclick", function () {
+                    x.domain(d3.extent(data, d => d.Time)).nice();
+                    xAxis.transition().call(d3.axisBottom(x));
+                    svg.selectAll(".dot")
+                        .transition()
+                        .attr("cx", d => x(d.Time));
+                });
+
+                let idleTimeout;
+                function idled() { idleTimeout = null; }
+            }
+
+
+
+        })
+
+    </script>
+</body>
+
+</html>
